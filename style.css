@@ -9,6 +9,7 @@
 
 body{
     font-family: "Poppins",  sans-serif;
+    
 }
 
 .logo {
@@ -102,6 +103,7 @@ header ul a{
 }
 .parallax {
     pointer-events: none;
+    transition: 0.45s cubic-bezier(0.2, 0.49, 0.32, 0.99);
 }
 
 main{
@@ -117,7 +119,6 @@ main{
     width: 2800px;
     top: calc(50% - 390px);
     left: calc(50% + 10px);
-    transform: translate(-50%,-50%);
     z-index: 1;
       /* checked */
 
@@ -130,7 +131,6 @@ main{
     width: 1900px;
     top: calc(50% - 100px);
     left: calc(50% + 30px);
-    transform: translate(-50%,-50%);
       /* checked */
 
 
@@ -142,7 +142,6 @@ main{
     width: 882px;
     top: calc(50% + 69px);
     left: calc(50% + 230px);
-    transform: translate(-50%,-50%);
       /* checked */
 
 
@@ -154,7 +153,6 @@ main{
     width: 1610px;
     top: calc(50% + 85px);
     left: calc(50% + 10px);
-    transform: translate(-50%,-50%);
       /* checked */
 
 
@@ -166,7 +164,6 @@ main{
     width: 470px;
     top: calc(50% + 113px);
     left: calc(50% - 457px);
-    transform: translate(-50%,-50%);
       /* checked */
 
 
@@ -178,7 +175,6 @@ main{
     width: 810px;
     top: calc(50% + 86px);
     left: calc(50% - 202px);
-    transform: translate(-50%,-50%);
       /* checked */
 
 
@@ -190,7 +186,6 @@ main{
     width: 450px;
     top: calc(50% + 160px);
     left: calc(50% + 20px);
-    transform: translate(-50%,-50%);
       /* checked */
 
 
@@ -204,7 +199,6 @@ main{
     width: 408px;
     top: calc(50% + 60px);
     left: calc(50% + 590px);
-    transform: translate(-50%,-50%);
       /* checked */
 
 
@@ -215,26 +209,54 @@ main{
     z-index: 9;
     top: calc(50% - 130px);
     left: 50%;
-    transform: translate(-50%, -50%);
     text-align: center;
     text-transform: uppercase;
     color: white;
     pointer-events: auto;
-
+    /* animation */
+   
 }
 
-.text h2{
+@keyframes moveDown {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes moveUp {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.text h2 {
     font-weight: 100;
     font-size: 6.5rem;
     line-height: 0.88;
-
+    position: relative;
+    animation: moveDown 3s ease-out forwards; 
 }
 
-.text h1{
+.text h1 {
     font-weight: 800;
     font-size: 8rem;
     line-height: 0.88;
+    position: relative;
+    animation: moveUp 3s ease-out forwards; 
 }
+
+
+ 
 
 .mountain-6{
     z-index: 10;
@@ -242,7 +264,6 @@ main{
     width: 408px;
     top: calc(50% + 60px);
     left: calc(50% + 590px);
-    transform: translate(-50%,-50%);
   /* checked */
 
 
@@ -256,7 +277,6 @@ main{
     width: 538px;
     top: calc(50% + 223px);
     left: calc(50% - 60px);
-    transform: translate(-50%,-50%);
   /* checked */
 
 }
@@ -267,7 +287,6 @@ main{
     width: 625px;
     top: calc(50% + 250px);
     left: calc(50% + 130px);
-    transform: translate(-50%,-50%);
    /* checked */
 }
 
@@ -277,7 +296,6 @@ main{
     width: 1600px;
     top: calc(50% + 110px);
     left: calc(50% - 15px);
-    transform: translate(-50%,-50%);
 
 
 }
@@ -288,7 +306,6 @@ main{
     width: 780px;
     top: calc(50% + 196px);
     left: calc(50% - 381px);
-    transform: translate(-50%,-50%);
 
 }
 
@@ -298,7 +315,6 @@ main{
     width: 538px;
     top: calc(50% + 123px);
     right: -20%;
-    transform: translate(-50%,-50%);
 
 
 }
@@ -310,7 +326,6 @@ main{
     width: 1560px;
     top: calc(50% + 147px);
     left: calc(50% - 30px);
-    transform: translate(-50%,-50%);
 
 }
 
@@ -321,7 +336,6 @@ main{
     width: 690px;
     top: calc(50% + 154px);
     left: calc(50% + 412px);
-    transform: translate(-50%,-50%);
   /* checked */
 
 }
@@ -333,7 +347,6 @@ main{
     width: 880px;
     top: calc(50% + 17px);
     left: calc(50% - 601px);
-    transform: translate(-50%,-50%);
       /* checked */
 
 
@@ -370,7 +383,6 @@ main{
     width: 1600px;
     top: calc(100% - 355px);
     right: -50%;
-    transform: translate(-50%,-50%);
       /* checked */
 
 
