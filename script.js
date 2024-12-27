@@ -16,8 +16,17 @@ window.addEventListener("mousemove", (e) =>{
 
 const main = document.querySelector("main");
 
-if(window.innerHeight >= 725){
-    main.style.maxHeight = `${window.innerWidth * 0.6}px`
-}else{
-    main.style.maxHeight = `${window.innerWidth * 1.6}px`
+function adjustMainHeight() {
+    const windowHeight = window.innerHeight;
+    const windowWidth = window.innerWidth;
+
+    if (windowHeight >= 725) {
+        main.style.maxHeight = `${Math.min(windowWidth * 0.6, windowHeight)}px`;
+    } else {
+        main.style.maxHeight = `${Math.min(windowWidth * 1.6, windowHeight)}px`;
+    }
 }
+
+// Call on load and resize
+adjustMainHeight();
+window.addEventListener("resize", adjustMainHeight);
