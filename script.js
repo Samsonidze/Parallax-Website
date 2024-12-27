@@ -21,7 +21,7 @@ function adjustMainHeight() {
     const windowWidth = window.innerWidth;
 
     if (windowHeight >= 725) {
-        main.style.maxHeight = `${Math.min(windowWidth * 0.9, windowHeight)}px`;
+        main.style.maxHeight = `${Math.min(windowWidth * 1.9, windowHeight)}px`;
     } else {
         main.style.maxHeight = `${Math.min(windowWidth * 1.9, windowHeight)}px`;
     }
