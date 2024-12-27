@@ -20,18 +20,15 @@ function adjustMainHeight() {
     const windowHeight = window.innerHeight;
     const windowWidth = window.innerWidth;
 
-    // Ensure main's height fits within the viewport
     if (windowHeight >= 725) {
         main.style.maxHeight = `${Math.min(windowWidth * 0.9, windowHeight)}px`;
     } else {
         main.style.maxHeight = `${Math.min(windowWidth * 1.9, windowHeight)}px`;
     }
 
-    // Ensure no white space by setting explicit height
     document.body.style.height = `${windowHeight}px`;
     document.documentElement.style.height = `${windowHeight}px`;
 }
 
-// Call on load and resize
 adjustMainHeight();
 window.addEventListener("resize", adjustMainHeight);
