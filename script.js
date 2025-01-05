@@ -32,3 +32,8 @@ function adjustMainHeight() {
 
 adjustMainHeight();
 window.addEventListener("resize", adjustMainHeight);
+
+
+
+
+

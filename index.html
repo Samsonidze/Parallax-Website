@@ -6,9 +6,40 @@
     <title>Paralax</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
+    <link rel="stylesheet" href="assets/css/button-styles.css">
 </head>
 <body>
+
+<!-- button -->
+<div class="button-container">
+<a href="#" class="button">
+    <span class="button__text">
+        Explore
+    </span>
+    <img src="assets/img/cone.png" alt="" class="button__cone">
+    <img src="assets/img/torus.png" alt="" class="button__torus">
+    <img src="assets/img/icosahedron.png" alt="" class="button__icosahedron">
+    <img src="assets/img/sphere.png" alt="" class="button__sphere">
+</a>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- main content -->
     <header>
         <nav>
             <img src="img/logo.png" class="logo" alt="">
@@ -54,9 +85,11 @@
         <img src="img/sun_rays.png"  alt="" class="sun-rays">
         <img src="img/fog_1.png" alt="" data-speedx="0.12" data-speedy="0.01" class="parallax fog-1">
     </main>
+
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
 
 
     <script src="script.js"></script>
+    <script src="button.js"></script>
 </body>
 </html>
