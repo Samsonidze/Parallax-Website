@@ -6,38 +6,23 @@
     <title>Paralax</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link rel="stylesheet" href="assets/css/button-styles.css">
+    <link rel="stylesheet" href="button-content/assets/css/button-styles.css">
+    <link rel="stylesheet" href="hamburger-menu/navbar-menu-toggle.css">
 </head>
 <body>
 
 <!-- button -->
-<div class="button-container">
+<!-- <div class="button-container">
 <a href="#" class="button">
     <span class="button__text">
         Explore
     </span>
-    <img src="assets/img/cone.png" alt="" class="button__cone">
-    <img src="assets/img/torus.png" alt="" class="button__torus">
-    <img src="assets/img/icosahedron.png" alt="" class="button__icosahedron">
-    <img src="assets/img/sphere.png" alt="" class="button__sphere">
+    <img src="button-content/assets/img/cone.png" alt="" class="button__cone">
+    <img src="button-content/assets/img/torus.png" alt="" class="button__torus">
+    <img src="button-content/assets/img/icosahedron.png" alt="" class="button__icosahedron">
+    <img src="button-content/assets/img/sphere.png" alt="" class="button__sphere">
 </a>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+</div> -->
 
     <!-- main content -->
     <header>
@@ -45,21 +30,27 @@
             <img src="img/logo.png" class="logo" alt="">
             <ul>
                 <li>
-                    <a href="#">Login</a>
+                    <a href="#" class="not-hamburger">Login</a>
                 </li>
                 <li>
-                    <a href="#">Sign Up</a>
+                    <a href="#" class="not-hamburger">Sign Up</a>
                 </li>
                 <li class="search">
-                    <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                    <a href="#" class="not-hamburger"><i class="fa-solid fa-magnifying-glass"></i></a>
                 </li>
-                <li class="hamburger">
+                <li class="hamburger menu-button" id="menu-toggle">
                     <a href="#">
                         <div class="bar"></div>
                     </a>
                 </li>
             </ul>
         </nav>
+        <!-- toggle menu -->
+        <div id="menu" class="sliding-menu">
+            <a href="#link1" class="menu-link">Link 1</a>
+            <a href="#link2" class="menu-link">Link 2</a>
+            <a href="#link3" class="menu-link">Link 3</a>
+          </div>
     </header>
 
     <main>
@@ -90,6 +81,7 @@
 
 
     <script src="script.js"></script>
-    <script src="button.js"></script>
+    <script src="button-content/button.js"></script>
+    <script src="hamburger-menu/nvabar-toggle.js"></script>
 </body>
 </html>

@@ -17,6 +17,9 @@ body{
 
 .logo {
     width: 200px;
+    
+
+    
 }
 
 header{
@@ -52,8 +55,16 @@ header ul a{
     color: white;
     padding: 0 1.5rem;
     text-transform: uppercase;
-    font-weight: 300;
-    font-size: 0.81rem;
+    font-weight: 00;
+    
+    font-size: 0.85rem;
+}
+
+.not-hamburger:hover{
+    background-color: aliceblue;
+    color: #0b372dbb;
+    margin: 15px;
+    border-radius: 10px;
 }
 
 .search a{
